@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --VeryDarkBlue: hsl(234, 12%, 34%);
+  --GrayishBlue: hsl(229, 6%, 66%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--VeryLightGray);
+}
+
+.wrapper {
+  max-width: 1024px;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  text-align: center;
+  font-weight: 200;
+  color: var(--VeryDarkBlue);
+  transition: all 0.3s ease-in-out;
+}
+
+.header .sub {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.header p {
+  font-size: 0.85rem;
+  text-align: center;
+  color: var(--GrayishBlue);
+  font-weight: 400;
+  width: 480px;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.service {
+  width: 100%;
+  display: flex;
+  transition: all 0.5s ease-in-out;
+}
+
+.service .col-1 {
+  padding: 0.75rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.service .col-1 .supervisor {
+  border-top: 4px solid var(--Cyan);
+  border-radius: 5px;
+  padding: 1.5rem;
+  box-shadow: 0 12px 8px rgba(84, 158, 242, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.service .col-1 .supervisor h4 {
+  color: var(--VeryDarkBlue);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.service .col-1 .supervisor p {
+  font-size: 0.75rem;
+  color: var(--GrayishBlue);
+}
+
+.service .col-1 .supervisor img {
+  width: 50px;
+  margin-top: 2rem;
+  float: right;
+}
+
+.service .col-2 {
+  flex: 1;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.service .col-2 .teambuilder {
+  border-top: 4px solid var(--Red);
+  border-radius: 5px;
+  padding: 1.5rem;
+  box-shadow: 0 12px 8px rgba(84, 158, 242, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.service .col-2 .teambuilder h4 {
+  color: var(--VeryDarkBlue);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.service .col-2 .teambuilder p {
+  font-size: 0.75rem;
+  color: var(--GrayishBlue);
+  
+}
+
+.service .col-2 .teambuilder img {
+  width: 50px;
+  margin-top: 2rem;
+  float: right;
+}
+
+.service .col-2 .karma {
+  border-top: 4px solid var(--Orange);
+  border-radius: 5px;
+  padding: 1.5rem;
+  box-shadow: 0 12px 8px rgba(84, 158, 242, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.service .col-2 .karma h4 {
+  color: var(--VeryDarkBlue);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.service .col-2 .karma p {
+  font-size: 0.75rem;
+  color: var(--GrayishBlue);
+}
+
+.service .col-2 .karma img {
+  width: 50px;
+  margin-top: 2rem;
+  float: right;
+}
+
+.service .col-3 {
+  padding: 0.75rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.service .col-3 .calculator {
+  border-top: 4px solid var(--Blue);
+  border-radius: 5px;
+  padding: 1.5rem;
+  box-shadow: 0 12px 8px rgba(84, 158, 242, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.service .col-3 .calculator h4 {
+  color: var(--VeryDarkBlue);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.service .col-3 .calculator p {
+  font-size: 0.75rem;
+  color: var(--GrayishBlue);
+}
+
+.service .col-3 .calculator img {
+  width: 50px;
+  margin-top: 2rem;
+  float: right;
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        height: auto;
+    }
+
+    .wrapper {
+        margin: 2.8rem;
+        width: auto;
+    }
+
+    .service {
+        flex-direction: column;
+    }
+
+    .service .col-1, .service .col-3 {
+        width: 100%;
+    }
+
+    .service .col-1 .supervisor{
+        width: 100%;
+    }
+
+    .service .col-3 .calculator{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .header h1 {
+        font-size: 1rem;
+    }
+
+    .header p {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .wrapper {
+        margin: 2rem;
+    }
+}
